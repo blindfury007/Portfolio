@@ -1,0 +1,100 @@
+*
+{
+	box-sizing: border-box; 
+}
+
+HTML
+{
+	width: 100%;
+	height: 100%;
+	background-color: red;
+}
+
+BODY
+{
+	display: flex;
+	height: 100%;
+	width: 100%;	
+	margin: 0%;
+}
+
+MAIN
+{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	width: 85%;
+	margin: 0%;
+}
+
+A
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	height: 3em;
+	background: linear-gradient(90deg, green, dimgray);
+	text-decoration: none;
+	color: white;
+}	
+
+A:hover
+{
+	background: linear-gradient(90deg, 	#080808, #202020, #080808);
+}
+	
+.TabB
+{
+	height: 4px;
+	width: auto;
+	background: linear-gradient(90deg, black, gray, black);
+	margin: 0;
+}
+
+MAIN
+{
+	display: flex;	
+}
+
+DIV 
+{	
+	display: none;
+}
+
+DIV:target 
+{
+	display: block;
+	flex: 1;
+	background-color: green;
+	color: white;
+	padding-left: 1em;
+}
+		
+NAV
+{
+	display: block;
+	width: 100%;
+	max-width: 20em;
+	background-color: red;
+	margin-left: -17em;
+	box-shadow: 5px 10px 15px black;
+	z-index: 1;
+	transition: all .2s;
+}
+
+SECTION
+{
+	display: block;
+	width: 1.5em;
+	height: 100%;
+	background: url('BlackMarble.jpg');
+	color: white;
+	font-size: xx-large;
+	text-align: center;
+}
+
+NAV:hover 
+{
+	margin-left: 0;
+	transition: all .2s;
+}
