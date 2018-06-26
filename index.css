@@ -13,6 +13,7 @@ HTML
 BODY
 {
 	display: flex;
+	background-color: red;
 	height: 100%;
 	width: 100%;	
 	margin: 0%;
@@ -32,8 +33,9 @@ A
 	display: flex;
 	align-items: center;
 	justify-content: center;
+	
 	height: 3em;
-	background: linear-gradient(90deg, green, dimgray);
+	background: linear-gradient(90deg, palegreen, dimgray);
 	text-decoration: none;
 	color: white;
 }	
@@ -63,9 +65,12 @@ DIV
 
 DIV:target 
 {
-	display: block;
+	display: flex;	
+	align-items: center;
+	justify-content: center;
 	flex: 1;
-	background-color: green;
+	background-color: red;
+	box-shadow: inset 5px 10px 15px black;
 	color: white;
 	padding-left: 1em;
 }
@@ -82,9 +87,11 @@ NAV
 	transition: all .2s;
 }
 
-SECTION
+#MENU
 {
 	display: block;
+	margin: 0;
+	float: right;
 	width: 1.5em;
 	height: 100%;
 	background: url('BlackMarble.jpg');
@@ -97,4 +104,15 @@ NAV:hover
 {
 	margin-left: 0;
 	transition: all .2s;
+}
+
+Section
+{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex: .9;
+	height: 80%;
+	background: url('BlackMarble.jpg');
+	box-shadow: 5px 10px 15px black;
 }
